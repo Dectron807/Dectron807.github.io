@@ -138,35 +138,41 @@
 
   <section id="projects" class="section projects">
     <h2 class="section-title reveal">My&nbsp;<span>Projects</span></h2>
-    <p class="section-sub reveal">Hover the cards — click the image to open on GitHub</p>
+    <p class="section-sub reveal">Наведите на карточку — клик по изображению открывает проект</p>
 
     <div class="projects-grid">
 
-      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-one" target="_blank" rel="noopener" style="--i:0">
-        <div class="project-img">
-          <img src="assets/projects/project1.png" alt="Project One"
+      <article class="project-card reveal tilt" data-tilt style="--i:0">
+        <a class="project-img" href="https://dectron807.github.io/pomidorka/" target="_blank" rel="noopener">
+          <img src="assets/projects/project1.png" alt="Помидорка"
                onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
-          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
-        </div>
+          <div class="img-overlay"><span class="gh-btn">&#8599; Открыть сайт</span></div>
+        </a>
         <div class="project-body">
-          <h3>Project One</h3>
-          <p>Short description of the project — what it does and which stack is used.</p>
-          <div class="tags"><span>#Python</span><span>#Django</span><span>#PostgreSQL</span></div>
+          <div class="proj-head">
+            <h3>Помидорка</h3>
+            <a href="https://github.com/Dectron807/Pomidorka" target="_blank" rel="noopener" class="gh-link">GitHub</a>
+          </div>
+          <p>Интернет-магазин продуктов: каталог товаров с рисованными SVG-иллюстрациями, выдвижная корзина с изменением количества, подсчётом суммы и оформлением заказа. Чистый JavaScript без фреймворков.</p>
+          <div class="tags"><span>#HTML5</span><span>#CSS3</span><span>#JavaScript</span><span>#UI</span></div>
         </div>
-      </a>
+      </article>
 
-      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-two" target="_blank" rel="noopener" style="--i:1">
-        <div class="project-img">
-          <img src="assets/projects/project2.png" alt="Project Two"
+      <article class="project-card reveal tilt" data-tilt style="--i:1">
+        <a class="project-img" href="https://dectron807.github.io/neopc/" target="_blank" rel="noopener">
+          <img src="assets/projects/project2.png" alt="NEONRIG"
                onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
-          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
-        </div>
+          <div class="img-overlay"><span class="gh-btn">&#8599; Открыть сайт</span></div>
+        </a>
         <div class="project-body">
-          <h3>Project Two</h3>
-          <p>Short description of the project — what it does and which stack is used.</p>
-          <div class="tags"><span>#C#</span><span>#.NET</span><span>#Web API</span></div>
+          <div class="proj-head">
+            <h3>NEONRIG</h3>
+            <a href="https://github.com/Dectron807/NeoPC" target="_blank" rel="noopener" class="gh-link">GitHub</a>
+          </div>
+          <p>Магазин игровых ПК в неоновом стиле: анимированные частицы на canvas, 3D-tilt карточек за курсором, SVG-корпуса с вращающимися RGB-кулерами и модальные окна с характеристиками сборок.</p>
+          <div class="tags"><span>#JavaScript</span><span>#SVG</span><span>#Canvas</span><span>#Animation</span></div>
         </div>
-      </a>
+      </article>
 
       <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-three" target="_blank" rel="noopener" style="--i:2">
         <div class="project-img">
