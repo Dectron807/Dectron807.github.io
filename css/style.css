@@ -743,6 +743,20 @@ a.project-img { display: block; }
 
 .socials { text-align: center; }
 
+.hero-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.social-btn.sm {
+  padding: 9px 18px;
+  font-size: 0.85rem;
+  gap: 8px;
+}
+.social-btn.sm svg { width: 17px; height: 17px; }
+
 .social-row {
   display: flex;
   justify-content: center;
