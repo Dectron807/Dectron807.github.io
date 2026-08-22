@@ -746,17 +746,21 @@ a.project-img { display: block; }
 .hero-socials {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
+  align-items: center;
+  column-gap: 18px;
   row-gap: 12px;
   margin-top: 16px;
 }
 
 .social-btn.sm {
-  padding: 10px 20px;
-  font-size: 0.85rem;
-  gap: 8px;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
 }
-.social-btn.sm svg { width: 17px; height: 17px; }
+.social-btn.sm svg { width: 20px; height: 20px; }
 
 .social-row {
   display: flex;
@@ -886,8 +890,8 @@ a.project-img { display: block; }
 }
 
 @media (max-width: 720px) {
-  .social-row { margin-top: 32px; }
-  .social-btn { padding: 11px 20px; font-size: 0.88rem; }
+  .social-btn.sm { width: 42px; height: 42px; }
+  .social-btn.sm svg { width: 18px; height: 18px; }
 }
 
 .footer {
