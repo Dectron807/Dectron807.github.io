@@ -829,6 +829,11 @@ a.project-img { display: block; }
   margin-bottom: 18px;
 }
 
+.music-sub {
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+
 .music-frame {
   border-radius: 18px;
   overflow: hidden;
