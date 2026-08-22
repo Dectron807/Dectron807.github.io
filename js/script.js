@@ -160,4 +160,27 @@
     if (!prefersReducedMotion) requestAnimationFrame(drawParticles);
   }
   drawParticles();
+  const toast = document.getElementById("toast");
+  let toastTimer;
+
+  function showToast(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+  }
+
+  const discordBtn = document.getElementById("discordCopy");
+  if (discordBtn) {
+    const NICK = "@samogonshik_03";
+    discordBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(NICK);
+        showToast("Discord скопирован: " + NICK);
+      } catch {
+        showToast("Discord: " + NICK);
+      }
+    });
+  }
 })();
