@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DECTRON — Fullstack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <nav class="nav reveal">
+    <a href="#hero" class="logo">DECTRON<span>.</span></a>
+    <div class="nav-links">
+      <a href="#hero">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-photo reveal" style="--i:0">
+        <div class="photo-frame tilt" data-tilt>
+          <div class="photo-ring"></div>
+          <img src="assets/photo.jpg" alt="Fedorov Denis"
+               onerror="this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22480%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%236d5dfc%22/%3E%3Cstop offset=%221%22 stop-color=%22%2346c2cb%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22400%22 height=%22480%22 fill=%22url(%23g)%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-family=%22Arial%22 font-size=%2228%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EYour photo%3C/text%3E%3C/svg%3E'">
+          <div class="photo-shine"></div>
+        </div>
+        <p class="photo-name">Fedorov Denis</p>
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-title glitch reveal" data-text="DECTRON" style="--i:1">DECTRON</h1>
+        <p class="hero-role reveal" style="--i:2"><span id="typed"></span><span class="caret">|</span></p>
+        <p class="about-lead reveal" style="--i:3">Fullstack Developer focused on <strong>Python</strong>, <strong>C#</strong>, <strong>Kotlin</strong>, <strong>JavaScript</strong> &amp; <strong>C++</strong></p>
+        <div class="hero-cta reveal" style="--i:4">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/Dectron807" target="_blank" rel="noopener" class="btn btn-ghost">GitHub &#8599;</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#stack" class="scroll-hint" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </header>
+
+  <section id="stack" class="section about">
+    <h2 class="section-title reveal">Tech&nbsp;<span>Stack</span></h2>
+
+    <div class="skills">
+      <div class="skill-card reveal" style="--i:0">
+        <div class="skill-logos">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt=".NET / C#" loading="lazy">
+        </div>
+        <h3>Backend</h3>
+        <p>Django • Node.js • .NET • Web API</p>
+        <span class="exp">3+ years</span>
+      </div>
+      <div class="skill-card reveal" style="--i:1">
+        <div class="skill-logos">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="MS SQL Server" loading="lazy">
+        </div>
+        <h3>Databases</h3>
+        <p>PostgreSQL • MySQL • MS SQL Server</p>
+        <span class="exp">3+ years</span>
+      </div>
+      <div class="skill-card reveal" style="--i:2">
+        <div class="skill-logos">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+        </div>
+        <h3>Frontend</h3>
+        <p>HTML5 • CSS3 • JavaScript</p>
+        <span class="exp">3+ years</span>
+      </div>
+      <div class="skill-card reveal" style="--i:3">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+        </div>
+        <h3>Architecture</h3>
+        <p>REST API • UML • System Design</p>
+        <span class="exp">3+ years</span>
+      </div>
+      <div class="skill-card reveal" style="--i:4">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V5"/><circle cx="12" cy="4" r="1"/><rect x="4" y="8" width="16" height="11" rx="2.5"/><line x1="9" y1="13" x2="9.01" y2="13"/><line x1="15" y1="13" x2="15.01" y2="13"/><path d="M9 16.5h6"/></svg>
+        </div>
+        <h3>AI / LLM</h3>
+        <p>Cursor • OpenCode • ChatGPT • Claude • Gemini • DeepSeek • Qwen</p>
+        <span class="exp">3+ years</span>
+      </div>
+      <div class="skill-card reveal" style="--i:5">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>Infrastructure</h3>
+        <p>Zabbix • Linux/Windows • Networking • System Administration</p>
+        <span class="exp">3+ years</span>
+      </div>
+      <div class="skill-card wide reveal" style="--i:6">
+        <div class="skill-logos">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy">
+          <img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg" alt="Visual Studio" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" loading="lazy">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" loading="lazy">
+        </div>
+        <h3>Tools</h3>
+        <p>Git • GitHub • Docker • VS Code • Visual Studio • PyCharm • Android Studio</p>
+        <span class="exp">3+ years</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2 class="section-title reveal">My&nbsp;<span>Projects</span></h2>
+    <p class="section-sub reveal">Hover the cards — click the image to open on GitHub</p>
+
+    <div class="projects-grid">
+
+      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-one" target="_blank" rel="noopener" style="--i:0">
+        <div class="project-img">
+          <img src="assets/projects/project1.png" alt="Project One"
+               onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
+          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Project One</h3>
+          <p>Short description of the project — what it does and which stack is used.</p>
+          <div class="tags"><span>#Python</span><span>#Django</span><span>#PostgreSQL</span></div>
+        </div>
+      </a>
+
+      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-two" target="_blank" rel="noopener" style="--i:1">
+        <div class="project-img">
+          <img src="assets/projects/project2.png" alt="Project Two"
+               onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
+          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Project Two</h3>
+          <p>Short description of the project — what it does and which stack is used.</p>
+          <div class="tags"><span>#C#</span><span>#.NET</span><span>#Web API</span></div>
+        </div>
+      </a>
+
+      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-three" target="_blank" rel="noopener" style="--i:2">
+        <div class="project-img">
+          <img src="assets/projects/project3.png" alt="Project Three"
+               onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
+          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Project Three</h3>
+          <p>Short description of the project — what it does and which stack is used.</p>
+          <div class="tags"><span>#Kotlin</span><span>#Android</span></div>
+        </div>
+      </a>
+
+      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-four" target="_blank" rel="noopener" style="--i:3">
+        <div class="project-img">
+          <img src="assets/projects/project4.png" alt="Project Four"
+               onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
+          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Project Four</h3>
+          <p>Short description of the project — what it does and which stack is used.</p>
+          <div class="tags"><span>#JavaScript</span><span>#Node.js</span></div>
+        </div>
+      </a>
+
+      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-five" target="_blank" rel="noopener" style="--i:4">
+        <div class="project-img">
+          <img src="assets/projects/project5.png" alt="Project Five"
+               onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
+          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Project Five</h3>
+          <p>Short description of the project — what it does and which stack is used.</p>
+          <div class="tags"><span>#C++</span><span>#Algorithms</span></div>
+        </div>
+      </a>
+
+      <a class="project-card reveal tilt" data-tilt href="https://github.com/yourname/project-six" target="_blank" rel="noopener" style="--i:5">
+        <div class="project-img">
+          <img src="assets/projects/project6.png" alt="Project Six"
+               onerror="this.closest('.project-img').classList.add('fallback'); this.remove()">
+          <div class="img-overlay"><span class="gh-btn">&#8599; GitHub</span></div>
+        </div>
+        <div class="project-body">
+          <h3>Project Six</h3>
+          <p>Short description of the project — what it does and which stack is used.</p>
+          <div class="tags"><span>#LLM</span><span>#Qwen3</span><span>#AI</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <blockquote class="quote reveal">
+      <p>&laquo;Будь, что будет! Что было есть!<br>Смех да слёзы, а чем ещё жить?&raquo;</p>
+      <cite>&mdash; Konstantin Kinchev</cite>
+    </blockquote>
+  </section>
+
+  <footer class="footer reveal">
+    <p>&copy; 2026 Fedorov Denis</p>
+    <a href="https://github.com/Dectron807" target="_blank" rel="noopener">github.com/Dectron807</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
