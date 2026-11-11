@@ -191,9 +191,6 @@ body {
   flex-shrink: 0;
 }
 
-.hero-photo.visible .photo-frame {
-  animation: floaty 6s ease-in-out infinite;
-}
 
 .photo-name {
   font-size: clamp(1.2rem, 2.4vw, 1.5rem);
@@ -214,10 +211,6 @@ body {
   padding: 4px;
 }
 
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
-}
 
 .photo-ring {
   position: absolute;
